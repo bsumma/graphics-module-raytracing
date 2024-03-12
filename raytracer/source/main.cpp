@@ -461,10 +461,10 @@ void initCornellBox(){
   Object::ShadingValues _shadingValues;
   _shadingValues.color = vec4(1.0,0.0,0.0,1.0);
   _shadingValues.Ka = 0.0;
-  _shadingValues.Kd = 0.0;
+  _shadingValues.Kd = 1.0;
   _shadingValues.Ks = 0.0;
   _shadingValues.Kn = 16.0;
-  _shadingValues.Kt = 1.0;
+  _shadingValues.Kt = 0.0;
   _shadingValues.Kr = 1.4;
   sceneObjects[sceneObjects.size()-1]->setShadingValues(_shadingValues);
   sceneObjects[sceneObjects.size()-1]->setModelView(Translate(1.0, -1.25, 0.5)*Scale(0.75, 0.75, 0.75));
@@ -475,8 +475,8 @@ void initCornellBox(){
   Object::ShadingValues _shadingValues;
   _shadingValues.color = vec4(1.0,1.0,1.0,1.0);
   _shadingValues.Ka = 0.0;
-  _shadingValues.Kd = 0.0;
-  _shadingValues.Ks = 1.0;
+  _shadingValues.Kd = 1.0;
+  _shadingValues.Ks = 0.0;
   _shadingValues.Kn = 16.0;
   _shadingValues.Kt = 0.0;
   _shadingValues.Kr = 0.0;
